@@ -50,8 +50,10 @@ fullnameOverride: ""
 imagePullSecrets: []
 
 image:
-  repository: place1/wg-access-server
+  repository: ghcr.io/freifunkmuc/wg-access-server
   pullPolicy: IfNotPresent
+  # This is kinda a bad default but other options are worse
+  tag: latest
 
 # multiple replicas is only supported when using
 # a supported highly-available storage backend (i.e. postgresql)
